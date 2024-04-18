@@ -28,10 +28,13 @@ def is_prime(num):
     >>> is_prime(11)
     <<< True
     """
-    divider = 2
-    while divider * divider <= num and num % divider != 0:
-        divider += 1
-    return divider * divider > num
+    if num in (0, 1):
+        return False
+    else:
+        divider = 2
+        while divider * divider <= num and num % divider != 0:
+            divider += 1
+        return divider * divider > num
 
 def is_odd(in_num):
     """
