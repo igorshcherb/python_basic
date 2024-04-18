@@ -1,2 +1,3 @@
 # python_basic
-Курс "Python Developer. Basic"
+Домашние задания и проектная работа по курсу 
+"Python Developer. Basic"
