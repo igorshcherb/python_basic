@@ -21,7 +21,7 @@ class Vehicle(ABC):
 
 
     def move(self, distance):
-        distance_consumption = (distance / 100) * self.fuel_consumption
+        distance_consumption = distance * self.fuel_consumption
         if self.fuel > distance_consumption:
             self.fuel -= distance_consumption
         else:
