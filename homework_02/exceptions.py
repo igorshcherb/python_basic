@@ -5,8 +5,8 @@
 - CargoOverload
 """
 class LowFuelError(Exception):
-    pass
+    message = 'Low Fuel Error'
 class NotEnoughFuel(Exception):
-    pass
+    message = 'Not Enough Fuel'
 class CargoOverload(Exception):
-    pass
+    message = 'Cargo Over load'

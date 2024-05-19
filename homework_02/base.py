@@ -3,6 +3,7 @@ from exceptions import LowFuelError
 from exceptions import NotEnoughFuel
 
 
+
 class Vehicle(ABC):
     weight: int = 100
     fuel: int = 20
