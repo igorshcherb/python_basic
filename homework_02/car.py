@@ -4,10 +4,10 @@
 from homework_02 import base
 from homework_02 import engine
 
-class Car(Vehicle):
-    engine: base.Engine
+class Car(base.Vehicle):
+    engine: engine.Engine
 
-    def set_engine(self, engine: engine.Engine):
+    def set_engine(self, engine):
         self.engine = engine
 
 def main():
