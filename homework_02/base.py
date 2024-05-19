@@ -22,17 +22,20 @@ class Vehicle(ABC):
 
     def move(self, distance):
         distance_consumption = distance * self.fuel_consumption
-        if self.fuel > distance_consumption:
+        if self.fuel >= distance_consumption:
             self.fuel -= distance_consumption
         else:
             raise exceptions.NotEnoughFuel
 
 def main():
-    vehicle = Vehicle(100, 20,10)
-    print(vehicle.started)
-    vehicle.fuel = 0
+    vehicle = Vehicle(100, 20,2)
+    # print(vehicle.started)
+    # vehicle.fuel = 0
+    # print(vehicle.fuel)
+    # vehicle.start()
     print(vehicle.fuel)
-    vehicle.start()
+    vehicle.move(5)
+    print(vehicle.fuel)
 
 if __name__ == '__main__':
     main()
