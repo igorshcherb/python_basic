@@ -1,5 +1,6 @@
 from abc import ABC
 from exceptions import LowFuelError
+from exceptions import NotEnoughFuel
 
 class Vehicle(ABC):
     weight: int = 100
