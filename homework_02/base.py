@@ -4,11 +4,14 @@ from exceptions import NotEnoughFuel
 
 
 class Vehicle(ABC):
-    def __init__(self, weight: int = 100, fuel: int = 20, fuel_consumption: int = 10):
+    weight: int = 100
+    fuel: int = 20
+    fuel_consumption: int = 10
+    started: bool = False
+    def __init__(self, weight, fuel, fuel_consumption):
         self.weight = weight
         self.fuel = fuel
         self.fuel_consumption = fuel_consumption
-        self.started=False
 
 
     def start(self):
