@@ -9,7 +9,10 @@ class Plane(Vehicle):
     max_cargo: int
 
     def __init__(self, weight = 100, started = False, fuel = 20, fuel_consumption = 10, max_cargo = 100):
-        super().__init__(weight, started, fuel, fuel_consumption)
+        self.weight = weight
+        self.started = started
+        self.fuel = fuel
+        self.fuel_consumption = fuel_consumption
         self.max_cargo = max_cargo
 
     def load_cargo(self, add_weight):
